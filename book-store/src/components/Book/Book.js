@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from "@mui/material";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import "./Book.css";
 
 const Book = (props) => {
     const history = useNavigate();
@@ -14,7 +15,7 @@ const Book = (props) => {
         .then(() => history("/books"));
     };
   return (
-    <div>
+    <div className='card'>
        <img src={image} alt={name} />
       <article>By {author}</article>
       <h3>{name}</h3>
