@@ -49,7 +49,16 @@ import {
       sendRequest().then(() => history("/books"));
     };
   
+    const style = {
+      backgroundImage: 'url(https://img.freepik.com/premium-photo/frame-made-fresh-lavender-flowers-light-purple-background_92397-2425.jpg)',
+      backgroundRepeat : "no-repeat",
+      backgroundSize : "100% 100vh",
+      position : "absolute",
+      height : "100%",
+      width : "100%",
+     }
     return (
+      <div  style={style}>
       <form onSubmit={handleSubmit}>
         <Box
           display="flex"
@@ -70,6 +79,7 @@ import {
             fullWidth
             variant="outlined"
             name="name"
+            
           />
           <FormLabel>Author</FormLabel>
           <TextField
@@ -120,6 +130,7 @@ import {
           </Button>
         </Box>
       </form>
+      </div>
     );
   };
   

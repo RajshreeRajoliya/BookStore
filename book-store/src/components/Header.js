@@ -6,7 +6,7 @@ const Header = () => {
   const [value, setValue] = useState();
   return (
     <div>
-      <AppBar sx={{ backgroundColor: "#232F3D" }} position="sticky">
+      <AppBar sx={{ backgroundColor:"	#7F00FF" }} position="sticky">
         <Toolbar>
           <NavLink to="/" style={{ color: "white" }}>
             <Typography>
@@ -15,7 +15,7 @@ const Header = () => {
           </NavLink>
           <Tabs
             sx={{ ml: "auto" }}
-            textColor="inherit"
+            textColor="white"
             indicatorColor="primary"
             value={value}
             onChange={(e, val) => setValue(val)}

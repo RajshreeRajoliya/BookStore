@@ -12,8 +12,16 @@ const Books = () => {
     fetchHandler().then((data) => setBooks(data.books));
   }, []);
   console.log(books);
-  return (
-    <div>
+  const style = {
+    backgroundImage: 'url(https://img.freepik.com/free-vector/editable-floral-aesthetic-template-social-media-post-with-inspirational-quote_53876-119316.jpg)',
+    backgroundRepeat : "no-repeat",
+    backgroundSize : "100% 100vh",
+    position : "absolute",
+    height : "100%",
+    width : "100%",
+   }
+   return (
+     <div style={style}>
       <ul>
         {books &&
           books.map((book, i) => (
